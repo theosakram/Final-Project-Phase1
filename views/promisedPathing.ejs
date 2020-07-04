@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="promisedPathing.css" type="text/css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="dropdown">
+    <button>Choose Your SSR</button>
+    <ul>
+      <% for (let i = 0; i < data.length; i++) { %>
+      <li><a href="/<%= data[i].name %>?name=<%= data[i].name %>"><%= data[i].name %></a></li>
+      <%} %>
+    </ul>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('button').click(function () {
+        $('ul').toggleClass('active')
+      })
+    })  
+  </script>
+</body>
+
+</html>

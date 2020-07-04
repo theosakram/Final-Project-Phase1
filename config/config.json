@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "theosakram",
+    "password": "pgpw",
+    "database": "Final-Project-Gacha",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "kfcfsdfaiiohgj",
+    "password": "c881d21660977a285eb60ffd65c810c691c34d047eb32f426f4f8f8d53a9b11f",
+    "database": "d9ovdntrte963f",
+    "host": "ec2-52-202-146-43.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  }
+}

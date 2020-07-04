@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css" type="text/css">
+  <title>Login</title>
+</head>
+
+<body>
+  <% if (err) { %>
+  <p style="color: #08A045; text-align: center;"><%= err %></p>
+  <% } %>
+  <div class="box">
+    <h2>Create an Account</h2>
+    <form action="/register" method="POST">
+      <div class="inputBox">
+        <input type="text" name="nickname" required="">
+        <label>Nickname</label>
+      </div>
+      <div class="inputBox">
+        <input type="email" name="email" required="">
+        <label>Email</label>
+      </div>
+      <div class="inputBox">
+        <input type="password" name="password" required="">
+        <label>Password</label>
+      </div>
+      <div class="inputBox">
+        <input type="password" name="confirmPassword" required="">
+        <label>Confirm Password</label>
+      </div>
+      <input type="submit" name="" value="Register">
+    </form>
+  </div>
+</body>
+
+</html>

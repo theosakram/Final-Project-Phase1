@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <% for (let i = 0; i < newData2.length; i++) { %>
+  <h2><%= `${newData2[i].grade} - ${newData2[i].name}` %></h1>
+    <% } %>
+
+    <h2>Your diamond: <%= newData.diamond - 300 %></h2>
+    <a href="/user/rolls">Back</a>
+</body>
+
+</html>
